@@ -1,0 +1,25 @@
+
+<h1>
+    mis skills
+    
+    
+    <section class="uk-container" >
+        <div  class="uk-position-relative uk-visible-toggle uk-light uk-flex  tabindex="-1" uk-slider>
+            {% for skill in skills %}
+            <!-- <div class="uk-flex"></div> -->
+                <div class="uk-panel">
+                    <h1>{{skill.nombre}}</h1>
+                    <img src={{skill.url_skill}} style="width: 50px;height: 50px;">
+                </div>
+            
+             {% endfor %}
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
+           
+        </div>        
+    </section>
+   
+   
+</h1>
+
+

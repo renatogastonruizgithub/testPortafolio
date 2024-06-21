@@ -1,0 +1,32 @@
+
+<section class="uk-flex uk-flex-center" style=" position: relative;height: 100vh;margin:1rem;background-color: aliceblue;border-top-left-radius: 20px;border-top-right-radius: 20px;">   
+    {% include "navbar.html"  %}
+    <div class="uk-container uk-flex uk-flex-center uk-flex-middle uk-flex-column">
+        <div class="uk-flex uk-flex-center uk-flex-middle uk-flex-column">
+            {% for developer in developer %}
+                <img src="{{developer.url_developer}}" style="border-radius: 50%;width: 100px;height: 100px;object-fit: contain;">
+                <div class="uk-flex">
+                    <h2 class="uk-margin-remove">
+                        {{developer.nombre}}
+                    </h2>
+                    <h2 class="uk-margin-remove">
+                        {{developer.apellido}}
+                    </h2>
+                </div>            
+                <p>
+                    {{developer.descripcion}}
+                </p>
+        {% endfor %}
+        <div>
+            <a  href="" style="background-color: black;" class="uk-icon-button uk-margin-small-right" uk-icon="github"></a>
+            <a href="" style="background-color: black;" class="uk-icon-button  uk-margin-small-right" uk-icon="linkedin"></a>
+           
+        </div>
+        </div>
+      
+    </div>
+</section>
+
+    
+
+

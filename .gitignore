@@ -1,0 +1,5 @@
+*.json
+account.json
+
+key.json
+/media

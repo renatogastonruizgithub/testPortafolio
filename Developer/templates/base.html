@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: black;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/css/uikit.min.css" />
+  
+    <title>Renato Ruiz</title>
+</head>
+<body>
+   
+    {% include "about.html" with developer=developer %}
+  
+    {% include "projects.html" %}
+   
+   <section class="ul-container">
+    <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+        <div class="uk-card uk-card-large uk-card-default ">
+            <div class="uk-card-media-top">
+                <img src="images/light.jpg" width="100" height="100" alt="">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">Media Top</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+            <div class="uk-card-footer">
+                <a href="#" class="uk-button uk-button-text">Read more</a>
+            </div>
+        </div>
+        <div class="uk-card uk-card-large uk-card-default ">
+            <div class="uk-card-media-top">
+                <img src="images/light.jpg" width="100" height="100" alt="">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">Media Top</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+            <div class="uk-card-footer">
+                <a href="#" class="uk-button uk-button-text">Read more</a>
+            </div>
+        </div>
+    </div>
+ 
+
+    <div style="background-color: blanchedalmond;" class="uk-slider-container-offset" uk-slider="center: true">                
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+            <div class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                <div>
+                    <div class="uk-card uk-card-large uk-card-default ">
+                        <div class="uk-card-media-top">
+                            <img src="images/light.jpg" width="100" height="100" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Media Top</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                        <div class="uk-card-footer">
+                            <a href="#" class="uk-button uk-button-text">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card uk-card-default ">
+                        <div class="uk-card-media-top">
+                            <img src="images/light.jpg" width="100" height="100" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Media Top</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                        <div class="uk-card-footer">
+                            <a href="#" class="uk-button uk-button-text">Read more</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div>
+                    <div class="uk-card uk-card uk-card-default ">
+                        <div class="uk-card-media-top">
+                            <img src="images/light.jpg" width="1800" height="1200" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Media Top</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                        <div class="uk-card-footer">
+                            <a href="#" class="uk-button uk-button-text">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
+        
+        </div>
+    </div>
+</section>
+  
+
+<footer>
+footer
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/js/uikit-icons.min.js"></script> 
+</body>
+</html>
